@@ -1,10 +1,7 @@
-***OSv was originally designed and implemented by Cloudius Systems (now ScyllaDB) however
- currently it is being maintained and enhanced by a small community of volunteers.
- If you are into systems programming or want to learn and help us improve OSv, then please
- contact us on [OSv Google Group forum](https://groups.google.com/forum/#!forum/osv-dev).
- For details on how to format and send patches, please read
- [this wiki](https://github.com/cloudius-systems/osv/wiki/Formatting-and-sending-patches)
- (__we do NOT accept pull requests__).***
+Nah, I'm not maintaining this.
+However, I could rewrite it's hidden C+ gem in Rust(probably unsafe, mo probably simply incorrect). .cz I'd wanna replace
+UEFI Stub, if there is any, by microwatt-halo-inspired boot sequence 4 POWER? (BE mode is exactly what I wanna 4 booties + it doesn't require LE calls 2 OpPAL(need it just 4 memmap & OCC / such).
+For now, I'm getting it slim enough 2 barely support nifty Linux features(hell of works, since this is out of sync with 5.0 kernel, which was (and is) enhanced @doing HPC.
 
 # OSv
 
