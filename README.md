@@ -2,6 +2,27 @@ Nah, I'm not maintaining this.
 However, I could rewrite it's hidden C+ gem in Rust(probably unsafe, mo probably simply incorrect). .cz I'd wanna replace
 UEFI Stub, if there is any, by microwatt-halo-inspired boot sequence 4 POWER? (BE mode is exactly what I wanna 4 booties + it doesn't require LE calls 2 OpPAL(need it just 4 memmap & OCC / such).
 For now, I'm getting it slim enough 2 barely support nifty Linux features(hell of works, since this is out of sync with 5.0 kernel, which was (and is) enhanced @doing HPC.
+Notes 4 mahself(nobody else is reading this, rite?):
+TPU eco dependes on RT, which 4 f32/f16 TPU variant, is made only 4 K8 platform(some oldfag build of x86_66 with pocchied Linux?). No variant 4 POWER?.
+4 starters, exp with microwatt-halo & Linux kernel entry 4 ppc64 arch. Otherwise it is just Rust on BareMetal.
+MLIR RT 4 now is just a concept. Custom dialect 4 Effective MLIR / Julia 4 Tiler / Rust unsafe code / wut did I miss?
+
+
+22:
+(Отсед грозить мы быдем шведу):
+1. AMD tiles(.cz Vidya works even on Linux OOA).
+2. U50's & Solarflares.
+3. This needs OCXL fastpath and enhanced APIs instead of emulation.
+4. RoCEv2(ATTO&_) / IB(including prop libs, & mb GDR provisioning 4 NIC(c AMD kernel driver(RDMA.c or _).
+5. PMEM_VOLUME(not really bout poptane, but NVMe/iSCSI?/SER are must have. StoreView's on SSD / burst buffer 4 RDMA GPFSes.
+6. IP/UDP stack(1q, available 2 userspace, and U-Stacks(including rBPF CC 2 Xilinx NPU). And 2 only RSocket inst of SDP 4 IB/RoCE(.cz much opensource, lest TF).
+
+End goals:
+1. 2 have TFRT / TFLite / XLA ELFs, linked with this OSRTS, running on BareMetal.
+2. 2 have XLA eco functioning @ level, allowing running .jl . That's a nice place 2 start.
+3. Rust-barebones integration(no_std, no libc(and shaky libcore wo c intrinsics)(Liftable Knuth as alloc, not TLSF 4 now).
+4. Redesign OS interfaces(RTS semantics(like TFRT) / static constructors 4 OS APIs & full IO bypass(even 4 config / control plane).
+
 
 # OSv
 
